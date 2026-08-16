@@ -1,1 +1,308 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Mwalimu360 - Form 1</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:#f4f7fb;
+  color:#1f2937;
+}
+
+header{
+  background:#0757b8;
+  color:white;
+  padding:16px;
+}
+
+.top{
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:25px;
+  font-weight:bold;
+}
+
+.back{
+  color:white;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.hero{
+  background:white;
+  text-align:center;
+  padding:50px 20px;
+}
+
+.hero h1{
+  color:#0757b8;
+  font-size:34px;
+  margin-bottom:12px;
+}
+
+.hero p{
+  max-width:700px;
+  margin:auto;
+  color:#555;
+  line-height:1.6;
+}
+
+.section{
+  max-width:1100px;
+  margin:auto;
+  padding:45px 20px;
+}
+
+.section h2{
+  text-align:center;
+  margin-bottom:25px;
+}
+
+.subjects{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.subject{
+  background:white;
+  padding:25px 18px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 3px 12px rgba(0,0,0,.08);
+  cursor:pointer;
+  transition:.2s;
+}
+
+.subject:hover{
+  transform:translateY(-4px);
+}
+
+.icon{
+  font-size:38px;
+  margin-bottom:12px;
+}
+
+.subject h3{
+  color:#0757b8;
+  margin-bottom:8px;
+  font-size:18px;
+}
+
+.subject p{
+  color:#666;
+  font-size:14px;
+  line-height:1.5;
+}
+
+.info{
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 3px 12px rgba(0,0,0,.06);
+  margin-top:30px;
+}
+
+.info h2{
+  color:#0757b8;
+  margin-bottom:12px;
+}
+
+.info p{
+  color:#555;
+  line-height:1.6;
+}
+
+footer{
+  background:#17202a;
+  color:white;
+  text-align:center;
+  padding:25px;
+  margin-top:30px;
+}
+
+@media(max-width:700px){
+
+.top{
+  flex-direction:column;
+  gap:12px;
+}
+
+.subjects{
+  grid-template-columns:1fr 1fr;
+}
+
+.hero h1{
+  font-size:30px;
+}
+
+}
+
+@media(max-width:450px){
+
+.subjects{
+  grid-template-columns:1fr;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="top">
+
+<div class="logo">
+Mwalimu360
+</div>
+
+<a class="back" href="secondary.html">
+← Secondary
+</a>
+
+</div>
+
+</header>
+
+
+<section class="hero">
+
+<h1>
+FORM 1
+</h1>
+
+<p>
+Karibu kwenye Mwalimu360 Form 1.
+Chagua somo unalotaka kujifunza.
+</p>
+
+</section>
+
+
+<section class="section">
+
+<h2>
+Masomo ya Form 1
+</h2>
+
+<div class="subjects">
+
+
+<div class="subject">
+<div class="icon">🔢</div>
+<h3>Mathematics</h3>
+<p>Masomo na mazoezi ya Mathematics.</p>
+</div>
+
+
+<div class="subject">
+<div class="icon">🇬🇧</div>
+<h3>English Language</h3>
+<p>Masomo na mazoezi ya English.</p>
+</div>
+
+
+<div class="subject">
+<div class="icon">🇹🇿</div>
+<h3>Kiswahili</h3>
+<p>Masomo na mazoezi ya Kiswahili.</p>
+</div>
+
+
+<div class="subject">
+<div class="icon">🧬</div>
+<h3>Biology</h3>
+<p>Masomo na mazoezi ya Biology.</p>
+</div>
+
+
+<div class="subject">
+<div class="icon">⚗️</div>
+<h3>Chemistry</h3>
+<p>Masomo na mazoezi ya Chemistry.</p>
+</div>
+
+
+<div class="subject">
+<div class="icon">⚡</div>
+<h3>Physics</h3>
+<p>Masomo na mazoezi ya Physics.</p>
+</div>
+
+
+<div class="subject">
+<div class="icon">🌍</div>
+<h3>Geography</h3>
+<p>Masomo na mazoezi ya Geography.</p>
+</div>
+
+
+<div class="subject">
+<div class="icon">📜</div>
+<h3>History</h3>
+<p>Masomo na mazoezi ya History.</p>
+</div>
+
+
+<div class="subject">
+<div class="icon">🇹🇿</div>
+<h3>Historia ya Tanzania na Maadili</h3>
+<p>Masomo ya Historia ya Tanzania na Maadili.</p>
+</div>
+
+
+<div class="subject">
+<div class="icon">💼</div>
+<h3>Business Studies</h3>
+<p>Masomo na mazoezi ya Business Studies.</p>
+</div>
+
+
+</div>
+
+
+<div class="info">
+
+<h2>
+Karibu Form 1
+</h2>
+
+<p>
+Mwalimu360 itakupa notes, maswali ya mazoezi,
+tests, mitihani na rasilimali nyingine za kujifunzia.
+Tutaziongeza hatua kwa hatua kwenye kila somo.
+</p>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>
+© 2026 Mwalimu360. Haki zote zimehifadhiwa.
+</p>
+
+</footer>
+
+</body>
+</html>
