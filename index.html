@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="sw">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Mwalimu360</title>
+  <title>Mwalimu360 - Jukwaa la Elimu</title>
 
   <style>
     * {
@@ -16,17 +15,17 @@
     }
 
     body {
-      background: #f5f7fa;
-      color: #222;
+      background: #f4f7fb;
+      color: #1f2937;
     }
 
     header {
-      background: #0b5ed7;
+      background: #0757b8;
       color: white;
-      padding: 18px 20px;
+      padding: 15px 18px;
     }
 
-    .nav {
+    .top {
       max-width: 1100px;
       margin: auto;
       display: flex;
@@ -42,87 +41,114 @@
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 18px;
-      font-size: 15px;
+      margin-left: 15px;
+      font-size: 14px;
     }
 
     .hero {
       background: white;
       text-align: center;
-      padding: 70px 20px;
+      padding: 55px 20px;
     }
 
     .hero h1 {
-      font-size: 38px;
-      margin-bottom: 15px;
-      color: #0b5ed7;
+      color: #0757b8;
+      font-size: 36px;
+      margin-bottom: 12px;
     }
 
     .hero p {
       max-width: 700px;
       margin: auto;
-      font-size: 18px;
-      line-height: 1.6;
       color: #555;
+      line-height: 1.6;
+      font-size: 17px;
     }
 
-    .buttons {
-      margin-top: 25px;
+    .search {
+      max-width: 600px;
+      margin: 25px auto 0;
+      display: flex;
     }
 
-    .btn {
-      display: inline-block;
-      padding: 13px 22px;
-      margin: 5px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
+    .search input {
+      flex: 1;
+      padding: 14px;
+      border: 1px solid #ddd;
+      border-radius: 6px 0 0 6px;
+      font-size: 15px;
     }
 
-    .primary {
-      background: #0b5ed7;
+    .search button {
+      padding: 14px 20px;
+      background: #0757b8;
       color: white;
-    }
-
-    .secondary {
-      border: 2px solid #0b5ed7;
-      color: #0b5ed7;
-      background: white;
+      border: none;
+      border-radius: 0 6px 6px 0;
     }
 
     .section {
       max-width: 1100px;
       margin: auto;
-      padding: 50px 20px;
+      padding: 45px 20px;
     }
 
     .section h2 {
       text-align: center;
-      margin-bottom: 30px;
-      font-size: 28px;
+      margin-bottom: 25px;
     }
 
     .cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      gap: 18px;
     }
 
     .card {
       background: white;
       padding: 25px;
       border-radius: 10px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+    }
+
+    .icon {
+      font-size: 32px;
+      margin-bottom: 12px;
     }
 
     .card h3 {
-      color: #0b5ed7;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
+      color: #0757b8;
     }
 
     .card p {
-      color: #555;
+      color: #666;
       line-height: 1.5;
+    }
+
+    .cta {
+      background: #0757b8;
+      color: white;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    .cta h2 {
+      margin-bottom: 10px;
+    }
+
+    .cta p {
+      margin-bottom: 20px;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: white;
+      color: #0757b8;
+      padding: 12px 22px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     footer {
@@ -130,11 +156,10 @@
       color: white;
       text-align: center;
       padding: 25px;
-      margin-top: 30px;
     }
 
     @media (max-width: 700px) {
-      .nav {
+      .top {
         flex-direction: column;
         gap: 12px;
       }
@@ -150,87 +175,128 @@
       .cards {
         grid-template-columns: 1fr;
       }
+
+      .search input,
+      .search button {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <div class="nav">
-      <div class="logo">Mwalimu360</div>
+<header>
+  <div class="top">
+    <div class="logo">Mwalimu360</div>
 
-      <nav>
-        <a href="#">Mwanzo</a>
-        <a href="#masomo">Masomo</a>
-        <a href="#kuhusu">Kuhusu</a>
-      </nav>
-    </div>
-  </header>
+    <nav>
+      <a href="#">Mwanzo</a>
+      <a href="#masomo">Masomo</a>
+      <a href="#kuhusu">Kuhusu</a>
+    </nav>
+  </div>
+</header>
 
-  <section class="hero">
-    <h1>Karibu Mwalimu360</h1>
+<section class="hero">
 
-    <p>
-      Jukwaa la kidijitali linalolenga kurahisisha upatikanaji
-      wa elimu, masomo na rasilimali za kujifunzia kwa wanafunzi
-      na walimu Tanzania.
-    </p>
+  <h1>Karibu Mwalimu360</h1>
 
-    <div class="buttons">
-      <a href="#masomo" class="btn primary">Anza Kujifunza</a>
-      <a href="#kuhusu" class="btn secondary">Jifunze Zaidi</a>
-    </div>
-  </section>
+  <p>
+    Jukwaa la kidijitali kwa wanafunzi na walimu
+    kupata masomo, notes, mitihani na rasilimali
+    za elimu kwa urahisi.
+  </p>
 
-  <section class="section" id="masomo">
-    <h2>Masomo</h2>
+  <div class="search">
+    <input type="text" placeholder="Tafuta somo au mada...">
+    <button>Tafuta</button>
+  </div>
 
-    <div class="cards">
+</section>
 
-      <div class="card">
-        <h3>Hisabati</h3>
-        <p>
-          Masomo, mazoezi na nyenzo mbalimbali za
-          kujifunzia Hisabati.
-        </p>
-      </div>
+<section class="section" id="masomo">
 
-      <div class="card">
-        <h3>Sayansi</h3>
-        <p>
-          Jifunze mada za Sayansi kwa njia rahisi
-          na yenye kueleweka.
-        </p>
-      </div>
+  <h2>Huduma za Mwalimu360</h2>
 
-      <div class="card">
-        <h3>Jiografia</h3>
-        <p>
-          Masomo na rasilimali za Jiografia kwa
-          wanafunzi wa Tanzania.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="section" id="kuhusu">
-    <h2>Kuhusu Jukwaa</h2>
+  <div class="cards">
 
     <div class="card">
+      <div class="icon">📚</div>
+      <h3>Masomo</h3>
       <p>
-        Mwalimu360 inalenga kujenga jukwaa la kisasa
-        la elimu litakalowaunganisha wanafunzi, walimu
-        na rasilimali za kujifunzia katika mazingira
-        ya kidijitali.
+        Pata masomo mbalimbali kwa ngazi tofauti
+        za elimu.
       </p>
     </div>
-  </section>
 
-  <footer>
-    <p>© 2026 Mwalimu360. Haki zote zimehifadhiwa.</p>
-  </footer>
+    <div class="card">
+      <div class="icon">📝</div>
+      <h3>Mitihani & Tests</h3>
+      <p>
+        Jifunze kupitia mitihani, tests na maswali
+        ya mazoezi.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📖</div>
+      <h3>Notes</h3>
+      <p>
+        Soma notes na muhtasari wa mada mbalimbali
+        kwa urahisi.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🎯</div>
+      <h3>NECTA</h3>
+      <p>
+        Rasilimali za maandalizi ya mitihani ya
+        kitaifa.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">👨‍🏫</div>
+      <h3>Walimu</h3>
+      <p>
+        Sehemu maalumu kwa walimu kushirikiana
+        na kupata rasilimali.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🔍</div>
+      <h3>Tafuta</h3>
+      <p>
+        Tafuta mada, somo au rasilimali unayohitaji
+        haraka.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="cta">
+
+  <h2>Jifunze. Jipime. Boresha Maarifa.</h2>
+
+  <p>
+    Mwalimu360 inalenga kufanya elimu iwe rahisi
+    kupatikana kwa kila mwanafunzi.
+  </p>
+
+  <a href="#masomo">Anza Kujifunza</a>
+
+</section>
+
+<footer>
+
+  <p>© 2026 Mwalimu360. Haki zote zimehifadhiwa.</p>
+
+</footer>
 
 </body>
 </html>
