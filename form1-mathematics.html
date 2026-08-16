@@ -3,193 +3,192 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Mwalimu360 - Form 1 Mathematics</title>
 
 <style>
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial,sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
 body{
-  background:#f4f7fb;
-  color:#1f2937;
+background:#f4f7fb;
+color:#1f2937;
 }
 
 header{
-  background:#0757b8;
-  color:white;
-  padding:16px;
+background:#0757b8;
+color:white;
+padding:16px;
 }
 
 .top{
-  max-width:1100px;
-  margin:auto;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+max-width:1100px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
 .logo{
-  font-size:25px;
-  font-weight:bold;
+font-size:25px;
+font-weight:bold;
 }
 
 .back{
-  color:white;
-  text-decoration:none;
-  font-size:14px;
+color:white;
+text-decoration:none;
+font-size:14px;
 }
 
 .hero{
-  background:white;
-  text-align:center;
-  padding:50px 20px;
+background:white;
+text-align:center;
+padding:50px 20px;
 }
 
 .hero h1{
-  color:#0757b8;
-  font-size:32px;
-  margin-bottom:12px;
+color:#0757b8;
+font-size:32px;
+margin-bottom:12px;
 }
 
 .hero p{
-  max-width:700px;
-  margin:auto;
-  color:#555;
-  line-height:1.6;
+max-width:700px;
+margin:auto;
+color:#555;
+line-height:1.6;
 }
 
 .section{
-  max-width:1000px;
-  margin:auto;
-  padding:45px 20px;
+max-width:1000px;
+margin:auto;
+padding:45px 20px;
 }
 
 .section h2{
-  text-align:center;
-  margin-bottom:25px;
+text-align:center;
+margin-bottom:25px;
 }
 
 .topics{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:18px;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px;
 }
 
 .topic{
-  background:white;
-  padding:25px;
-  border-radius:12px;
-  box-shadow:0 3px 12px rgba(0,0,0,.08);
-  transition:.2s;
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 3px 12px rgba(0,0,0,.08);
+transition:.2s;
 }
 
 .topic:hover{
-  transform:translateY(-3px);
+transform:translateY(-3px);
 }
 
 .topic a{
-  display:block;
-  text-decoration:none;
-  color:inherit;
+display:block;
+text-decoration:none;
+color:inherit;
 }
 
 .topic-number{
-  color:#0757b8;
-  font-weight:bold;
-  font-size:14px;
-  margin-bottom:8px;
+color:#0757b8;
+font-weight:bold;
+font-size:14px;
+margin-bottom:8px;
 }
 
 .topic h3{
-  color:#0757b8;
-  margin-bottom:10px;
+color:#0757b8;
+margin-bottom:10px;
 }
 
 .topic p{
-  color:#666;
-  line-height:1.5;
-  font-size:14px;
+color:#666;
+line-height:1.5;
+font-size:14px;
 }
 
 .resources{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-  margin-top:35px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+margin-top:35px;
 }
 
 .resource{
-  background:white;
-  padding:22px;
-  text-align:center;
-  border-radius:10px;
-  box-shadow:0 3px 12px rgba(0,0,0,.08);
+background:white;
+padding:22px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 3px 12px rgba(0,0,0,.08);
 }
 
 .resource .icon{
-  font-size:32px;
-  margin-bottom:10px;
+font-size:32px;
+margin-bottom:10px;
 }
 
 .resource h3{
-  color:#0757b8;
-  margin-bottom:8px;
+color:#0757b8;
+margin-bottom:8px;
 }
 
 .resource p{
-  color:#666;
-  font-size:14px;
-  line-height:1.5;
+color:#666;
+font-size:14px;
+line-height:1.5;
 }
 
 .info{
-  background:white;
-  padding:25px;
-  border-radius:10px;
-  box-shadow:0 3px 12px rgba(0,0,0,.06);
-  margin-top:30px;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 3px 12px rgba(0,0,0,.06);
+margin-top:30px;
 }
 
 .info h2{
-  color:#0757b8;
-  margin-bottom:12px;
+color:#0757b8;
+margin-bottom:12px;
 }
 
 .info p{
-  color:#555;
-  line-height:1.6;
+color:#555;
+line-height:1.6;
 }
 
 footer{
-  background:#17202a;
-  color:white;
-  text-align:center;
-  padding:25px;
-  margin-top:30px;
+background:#17202a;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:30px;
 }
 
 @media(max-width:700px){
 
 .top{
-  flex-direction:column;
-  gap:12px;
+flex-direction:column;
+gap:12px;
 }
 
 .topics{
-  grid-template-columns:1fr;
+grid-template-columns:1fr;
 }
 
 .resources{
-  grid-template-columns:1fr;
+grid-template-columns:1fr;
 }
 
 .hero h1{
-  font-size:28px;
+font-size:28px;
 }
 
 }
@@ -199,7 +198,6 @@ footer{
 <body>
 
 <header>
-
 <div class="top">
 
 <div class="logo">
@@ -211,7 +209,6 @@ Mwalimu360
 </a>
 
 </div>
-
 </header>
 
 
@@ -240,7 +237,6 @@ Topics za Form 1 Mathematics
 
 
 <div class="topic">
-
 <a href="form1-math-concept.html">
 
 <div class="topic-number">
@@ -257,12 +253,10 @@ wake katika maisha ya kila siku.
 </p>
 
 </a>
-
 </div>
 
 
 <div class="topic">
-
 <a href="form1-math-numbers.html">
 
 <div class="topic-number">
@@ -279,11 +273,11 @@ numbers, real numbers, inequalities na absolute value.
 </p>
 
 </a>
-
 </div>
 
 
 <div class="topic">
+<a href="form1-math-approximations.html">
 
 <div class="topic-number">
 TOPIC 03
@@ -294,10 +288,11 @@ Approximations
 </h3>
 
 <p>
-Maana ya approximation, rounding off, significant
-figures na matumizi ya approximations.
+Rounding off, decimal places, significant figures
+na matumizi ya approximations.
 </p>
 
+</a>
 </div>
 
 
@@ -364,108 +359,41 @@ Learning Resources
 
 <div class="resources">
 
+<div class="resource">
+<div class="icon">📖</div>
+<h3>Notes</h3>
+<p>Notes zilizopangwa kwa kila topic.</p>
+</div>
 
 <div class="resource">
-
-<div class="icon">
-📖
+<div class="icon">💡</div>
+<h3>Worked Examples</h3>
+<p>Mifano iliyotatuliwa hatua kwa hatua.</p>
 </div>
-
-<h3>
-Notes
-</h3>
-
-<p>
-Notes zilizopangwa kwa kila topic.
-</p>
-
-</div>
-
 
 <div class="resource">
-
-<div class="icon">
-💡
+<div class="icon">✏️</div>
+<h3>Exercises</h3>
+<p>Maswali ya mazoezi kwa mwanafunzi.</p>
 </div>
-
-<h3>
-Worked Examples
-</h3>
-
-<p>
-Mifano iliyotatuliwa hatua kwa hatua.
-</p>
-
-</div>
-
 
 <div class="resource">
-
-<div class="icon">
-✏️
+<div class="icon">📝</div>
+<h3>Tests</h3>
+<p>Tests za Mathematics kwa Form 1.</p>
 </div>
-
-<h3>
-Exercises
-</h3>
-
-<p>
-Maswali ya mazoezi kwa mwanafunzi.
-</p>
-
-</div>
-
 
 <div class="resource">
-
-<div class="icon">
-📝
+<div class="icon">✅</div>
+<h3>Answers</h3>
+<p>Majibu ya exercises na tests.</p>
 </div>
-
-<h3>
-Tests
-</h3>
-
-<p>
-Tests za Mathematics kwa Form 1.
-</p>
-
-</div>
-
 
 <div class="resource">
-
-<div class="icon">
-✅
+<div class="icon">🎯</div>
+<h3>NECTA Preparation</h3>
+<p>Maandalizi ya mitihani na mazoezi.</p>
 </div>
-
-<h3>
-Answers
-</h3>
-
-<p>
-Majibu ya exercises na tests.
-</p>
-
-</div>
-
-
-<div class="resource">
-
-<div class="icon">
-🎯
-</div>
-
-<h3>
-NECTA Preparation
-</h3>
-
-<p>
-Maandalizi ya mitihani na mazoezi.
-</p>
-
-</div>
-
 
 </div>
 
