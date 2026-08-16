@@ -1,1 +1,236 @@
 
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Elimu Tanzania</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #222;
+    }
+
+    header {
+      background: #0b5ed7;
+      color: white;
+      padding: 18px 20px;
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 15px;
+    }
+
+    .hero {
+      background: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .hero h1 {
+      font-size: 38px;
+      margin-bottom: 15px;
+      color: #0b5ed7;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .buttons {
+      margin-top: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      margin: 5px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .primary {
+      background: #0b5ed7;
+      color: white;
+    }
+
+    .secondary {
+      border: 2px solid #0b5ed7;
+      color: #0b5ed7;
+      background: white;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      color: #0b5ed7;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #555;
+      line-height: 1.5;
+    }
+
+    footer {
+      background: #17202a;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 700px) {
+      .nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav">
+      <div class="logo">Elimu Tanzania</div>
+
+      <nav>
+        <a href="#">Mwanzo</a>
+        <a href="#masomo">Masomo</a>
+        <a href="#kuhusu">Kuhusu</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Karibu Elimu Tanzania</h1>
+
+    <p>
+      Jukwaa la kidijitali linalolenga kurahisisha upatikanaji
+      wa elimu, masomo na rasilimali za kujifunzia kwa wanafunzi
+      na walimu Tanzania.
+    </p>
+
+    <div class="buttons">
+      <a href="#masomo" class="btn primary">Anza Kujifunza</a>
+      <a href="#kuhusu" class="btn secondary">Jifunze Zaidi</a>
+    </div>
+  </section>
+
+  <section class="section" id="masomo">
+    <h2>Masomo</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Hisabati</h3>
+        <p>
+          Masomo, mazoezi na nyenzo mbalimbali za
+          kujifunzia Hisabati.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Sayansi</h3>
+        <p>
+          Jifunze mada za Sayansi kwa njia rahisi
+          na yenye kueleweka.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Jiografia</h3>
+        <p>
+          Masomo na rasilimali za Jiografia kwa
+          wanafunzi wa Tanzania.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="kuhusu">
+    <h2>Kuhusu Jukwaa</h2>
+
+    <div class="card">
+      <p>
+        Elimu Tanzania inalenga kujenga jukwaa la kisasa
+        la elimu litakalowaunganisha wanafunzi, walimu
+        na rasilimali za kujifunzia katika mazingira
+        ya kidijitali.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Elimu Tanzania. Haki zote zimehifadhiwa.</p>
+  </footer>
+
+</body>
+</html>
