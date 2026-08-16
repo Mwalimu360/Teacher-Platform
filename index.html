@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mwalimu360 - Elimu Tanzania</title>
+<title>Mwalimu360 - Jukwaa la Elimu</title>
 
 <style>
 *{
@@ -97,6 +97,41 @@ nav a{
   margin-bottom:25px;
 }
 
+.levels{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.level{
+  background:white;
+  padding:30px 20px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 3px 12px rgba(0,0,0,.08);
+  cursor:pointer;
+  transition:.2s;
+}
+
+.level:hover{
+  transform:translateY(-4px);
+}
+
+.level-icon{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.level h3{
+  color:#0757b8;
+  margin-bottom:10px;
+  font-size:20px;
+}
+
+.level p{
+  color:#666;
+}
+
 .cards{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -108,12 +143,6 @@ nav a{
   padding:25px;
   border-radius:10px;
   box-shadow:0 3px 12px rgba(0,0,0,.07);
-  cursor:pointer;
-  transition:.2s;
-}
-
-.card:hover{
-  transform:translateY(-3px);
 }
 
 .icon{
@@ -131,36 +160,19 @@ nav a{
   line-height:1.5;
 }
 
-.levels{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:18px;
-  margin-top:25px;
-}
-
-.level{
-  background:white;
-  padding:25px;
-  border-radius:10px;
-  border-left:5px solid #0757b8;
-  box-shadow:0 3px 12px rgba(0,0,0,.07);
-  cursor:pointer;
-}
-
-.level h3{
-  color:#0757b8;
-  margin-bottom:8px;
-}
-
-.level p{
-  color:#666;
-}
-
 .cta{
   background:#0757b8;
   color:white;
   text-align:center;
   padding:45px 20px;
+}
+
+.cta h2{
+  margin-bottom:10px;
+}
+
+.cta p{
+  margin-bottom:20px;
 }
 
 footer{
@@ -185,11 +197,11 @@ nav a{
   font-size:30px;
 }
 
-.cards{
+.levels{
   grid-template-columns:1fr;
 }
 
-.levels{
+.cards{
   grid-template-columns:1fr;
 }
 
@@ -209,8 +221,8 @@ Mwalimu360
 
 <nav>
 <a href="#">Mwanzo</a>
-<a href="#masomo">Masomo</a>
-<a href="#kuhusu">Kuhusu</a>
+<a href="#elimu">Elimu</a>
+<a href="#huduma">Huduma</a>
 </nav>
 
 </div>
@@ -227,7 +239,7 @@ Karibu Mwalimu360
 <p>
 Jukwaa la kidijitali kwa wanafunzi na walimu
 kupata masomo, notes, mitihani na rasilimali
-za elimu.
+za elimu kwa urahisi.
 </p>
 
 <div class="search">
@@ -246,7 +258,7 @@ Tafuta
 </section>
 
 
-<section class="section" id="masomo">
+<section class="section" id="elimu">
 
 <h2>
 Chagua Ngazi ya Elimu
@@ -255,38 +267,53 @@ Chagua Ngazi ya Elimu
 <div class="levels">
 
 <div class="level">
-<h3>📘 Primary</h3>
-<p>
-Masomo kwa wanafunzi wa shule za msingi.
-</p>
+
+<div class="level-icon">
+📘
 </div>
 
-<div class="level">
-<h3>📚 Kidato cha 1–2</h3>
+<h3>
+PRIMARY
+</h3>
+
 <p>
-Masomo na mazoezi kwa Form One na Form Two.
+Standard 1–7
 </p>
+
 </div>
 
-<div class="level">
-<h3>📖 Kidato cha 3–4</h3>
-<p>
-Masomo, notes na mitihani kwa Form Three na Form Four.
-</p>
-</div>
 
 <div class="level">
-<h3>🎓 Kidato cha 5–6</h3>
-<p>
-Masomo kwa wanafunzi wa Advanced Level.
-</p>
+
+<div class="level-icon">
+📚
 </div>
 
-<div class="level">
-<h3>👨‍🏫 Teacher Resources</h3>
+<h3>
+SECONDARY
+</h3>
+
 <p>
-Nyenzo maalumu kwa walimu.
+Form 1–4
 </p>
+
+</div>
+
+
+<div class="level">
+
+<div class="level-icon">
+🎓
+</div>
+
+<h3>
+ADVANCED LEVEL
+</h3>
+
+<p>
+Form 5–6
+</p>
+
 </div>
 
 </div>
@@ -294,7 +321,7 @@ Nyenzo maalumu kwa walimu.
 </section>
 
 
-<section class="section">
+<section class="section" id="huduma">
 
 <h2>
 Huduma za Mwalimu360
@@ -303,51 +330,104 @@ Huduma za Mwalimu360
 <div class="cards">
 
 <div class="card">
-<div class="icon">📝</div>
-<h3>Mitihani & Tests</h3>
+
+<div class="icon">
+📝
+</div>
+
+<h3>
+Mitihani & Tests
+</h3>
+
 <p>
 Mitihani na tests za kujipima.
 </p>
+
 </div>
 
+
 <div class="card">
-<div class="icon">📖</div>
-<h3>Notes</h3>
+
+<div class="icon">
+📖
+</div>
+
+<h3>
+Notes
+</h3>
+
 <p>
-Notes na muhtasari wa mada.
+Notes na muhtasari wa mada mbalimbali.
 </p>
+
 </div>
 
+
 <div class="card">
-<div class="icon">🎯</div>
-<h3>NECTA</h3>
+
+<div class="icon">
+🎯
+</div>
+
+<h3>
+NECTA
+</h3>
+
 <p>
-Rasilimali za maandalizi ya mitihani.
+Rasilimali za maandalizi ya mitihani ya kitaifa.
 </p>
+
 </div>
 
+
 <div class="card">
-<div class="icon">👨‍🏫</div>
-<h3>Walimu</h3>
+
+<div class="icon">
+👨‍🏫
+</div>
+
+<h3>
+Walimu
+</h3>
+
 <p>
-Rasilimali na zana kwa walimu.
+Nyenzo na rasilimali maalumu kwa walimu.
 </p>
+
 </div>
 
+
 <div class="card">
-<div class="icon">🔍</div>
-<h3>Tafuta</h3>
+
+<div class="icon">
+🔍
+</div>
+
+<h3>
+Tafuta
+</h3>
+
 <p>
 Tafuta masomo na mada kwa haraka.
 </p>
+
 </div>
 
+
 <div class="card">
-<div class="icon">🏆</div>
-<h3>Matokeo</h3>
+
+<div class="icon">
+🏆
+</div>
+
+<h3>
+Maendeleo
+</h3>
+
 <p>
 Fuatilia maendeleo yako ya kujifunza.
 </p>
+
 </div>
 
 </div>
@@ -362,7 +442,8 @@ Jifunze. Jipime. Boresha Maarifa.
 </h2>
 
 <p>
-Mwalimu360 inalenga kurahisisha upatikanaji wa elimu.
+Mwalimu360 inalenga kurahisisha upatikanaji wa elimu
+kwa wanafunzi na walimu Tanzania.
 </p>
 
 </section>
