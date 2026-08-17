@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mwalimu360 - Linear Motion</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f7fb;
+color:#1f2937;
+}
+
+header{
+background:#0757b8;
+color:white;
+padding:16px;
+}
+
+.top{
+max-width:1000px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:25px;
+font-weight:bold;
+}
+
+.back{
+color:white;
+text-decoration:none;
+font-size:14px;
+}
+
+.hero{
+background:white;
+text-align:center;
+padding:45px 20px;
+}
+
+.hero h1{
+color:#0757b8;
+font-size:30px;
+margin-bottom:12px;
+}
+
+.hero p{
+color:#555;
+line-height:1.6;
+}
+
+.section{
+max-width:900px;
+margin:auto;
+padding:35px 20px;
+}
+
+.box{
+background:white;
+padding:25px;
+margin-bottom:20px;
+border-radius:10px;
+box-shadow:0 3px 12px rgba(0,0,0,.07);
+}
+
+.box h2{
+color:#0757b8;
+margin-bottom:15px;
+}
+
+.box h3{
+color:#0757b8;
+margin:18px 0 8px;
+}
+
+.box p{
+line-height:1.7;
+color:#444;
+}
+
+.formula{
+background:#eef5ff;
+padding:16px;
+border-radius:8px;
+text-align:center;
+font-weight:bold;
+font-size:18px;
+margin:15px 0;
+color:#0757b8;
+line-height:1.8;
+}
+
+.example{
+background:#eef5ff;
+padding:18px;
+border-radius:8px;
+margin-top:15px;
+line-height:1.8;
+}
+
+.questions{
+padding-left:20px;
+line-height:2;
+}
+
+.answer{
+margin-top:15px;
+padding:15px;
+background:#f4f7fb;
+border-radius:8px;
+line-height:1.8;
+}
+
+.note{
+background:#fff8e6;
+padding:16px;
+border-left:4px solid #0757b8;
+border-radius:6px;
+margin-top:15px;
+line-height:1.7;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+th,td{
+border:1px solid #ddd;
+padding:10px;
+text-align:left;
+}
+
+th{
+background:#eef5ff;
+color:#0757b8;
+}
+
+footer{
+background:#17202a;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:30px;
+}
+
+@media(max-width:600px){
+
+.top{
+flex-direction:column;
+gap:12px;
+}
+
+.hero h1{
+font-size:27px;
+}
+
+table{
+font-size:14px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="top">
+
+<div class="logo">
+Mwalimu360
+</div>
+
+<a class="back" href="form1-physics.html">
+← Physics
+</a>
+
+</div>
+
+</header>
+
+
+<section class="hero">
+
+<h1>
+LINEAR MOTION
+</h1>
+
+<p>
+Form 1 Physics
+</p>
+
+</section>
+
+
+<section class="section">
+
+
+<div class="box">
+
+<h2>
+📖 Notes
+</h2>
+
+
+<h3>
+1. Meaning of Motion
+</h3>
+
+<p>
+Motion is the change in position of an object with time
+relative to a reference point.
+</p>
+
+<div class="note">
+<strong>Example:</strong>
+A car moving along a road is in motion relative to
+a person standing beside the road.
+</div>
+
+
+<h3>
+2. Rest and Motion
+</h3>
+
+<p>
+An object is said to be at rest when its position does not
+change with time relative to a chosen reference point.
+An object is in motion when its position changes with time.
+</p>
+
+
+<h3>
+3. Distance
+</h3>
+
+<p>
+Distance is the total length of the path travelled by an
+object. Distance is a scalar quantity.
+</p>
+
+<div class="formula">
+SI unit of distance = metre (m)
+</div>
+
+
+<h3>
+4. Displacement
+</h3>
+
+<p>
+Displacement is the shortest distance in a specified
+direction from the initial position to the final position.
+Displacement is a vector quantity.
+</p>
+
+<div class="note">
+<strong>Important:</strong>
+Distance has magnitude only, while displacement has both
+magnitude and direction.
+</div>
+
+
+<h3>
+5. Speed
+</h3>
+
+<p>
+Speed is the distance travelled per unit time.
+</p>
+
+<div class="formula">
+Speed = Distance ÷ Time
+<br>
+v = d / t
+</div>
+
+<p>
+The SI unit of speed is metre per second (m/s).
+</p>
+
+
+<h3>
+6. Average Speed
+</h3>
+
+<p>
+Average speed is the total distance travelled divided by
+the total time taken.
+</p>
+
+<div class="formula">
+Average Speed =
+Total Distance ÷ Total Time
+</div>
+
+
+<h3>
+7. Velocity
+</h3>
+
+<p>
+Velocity is the displacement travelled per unit time in
+a specified direction. Velocity is a vector quantity.
+</p>
+
+<div class="formula">
+Velocity = Displacement ÷ Time
+</div>
+
+
+<h3>
+8. Acceleration
+</h3>
+
+<p>
+Acceleration is the rate of change of velocity with time.
+</p>
+
+<div class="formula">
+Acceleration =
+Change in Velocity ÷ Time
+<br>
+a = (v - u) / t
+</div>
+
+<p>
+where u is the initial velocity and v is the final velocity.
+</p>
+
+
+<h3>
+9. Deceleration
+</h3>
+
+<p>
+Deceleration is the rate at which velocity decreases with
+time. It is also called negative acceleration.
+</p>
+
+
+<h3>
+10. Uniform Motion
+</h3>
+
+<p>
+An object is in uniform motion when it travels equal
+distances in equal intervals of time.
+</p>
+
+
+<h3>
+11. Non-uniform Motion
+</h3>
+
+<p>
+An object is in non-uniform motion when it travels unequal
+distances in equal intervals of time, or when its direction
+changes.
+</p>
+
+
+<h3>
+12. Equations of Uniformly Accelerated Motion
+</h3>
+
+<div class="formula">
+
+v = u + at
+
+<br>
+
+s = ut + ½at²
+
+<br>
+
+v² = u² + 2as
+
+</div>
+
+<p>
+where:
+</p>
+
+<ul style="line-height:1.8;padding-left:25px;">
+
+<li>u = initial velocity</li>
+<li>v = final velocity</li>
+<li>a = acceleration</li>
+<li>t = time</li>
+<li>s = displacement</li>
+
+</ul>
+
+
+<h3>
+13. Distance-Time Graph
+</h3>
+
+<p>
+A distance-time graph shows how the distance travelled
+by an object changes with time.
+The gradient of a distance-time graph represents speed.
+</p>
+
+
+<h3>
+14. Velocity-Time Graph
+</h3>
+
+<p>
+A velocity-time graph shows how velocity changes with time.
+The gradient represents acceleration, while the area under
+the graph represents displacement.
+</p>
+
+
+<h3>
+15. Summary of Motion Quantities
+</h3>
+
+<table>
+
+<tr>
+<th>Quantity</th>
+<th>Meaning</th>
+<th>SI Unit</th>
+</tr>
+
+<tr>
+<td>Distance</td>
+<td>Total path travelled</td>
+<td>m</td>
+</tr>
+
+<tr>
+<td>Displacement</td>
+<td>Shortest distance in a specified direction</td>
+<td>m</td>
+</tr>
+
+<tr>
+<td>Speed</td>
+<td>Distance per unit time</td>
+<td>m/s</td>
+</tr>
+
+<tr>
+<td>Velocity</td>
+<td>Displacement per unit time</td>
+<td>m/s</td>
+</tr>
+
+<tr>
+<td>Acceleration</td>
+<td>Change in velocity per unit time</td>
+<td>m/s²</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<div class="box">
+
+<h2>
+💡 Worked Examples
+</h2>
+
+
+<p>
+<strong>Example 1:</strong>
+A car travels 120 m in 10 seconds.
+Calculate its speed.
+</p>
+
+<div class="example">
+
+Speed = Distance ÷ Time
+
+<br><br>
+
+Speed = 120 ÷ 10
+
+<br><br>
+
+<strong>Speed = 12 m/s</strong>
+
+</div>
+
+
+<p style="margin-top:20px;">
+<strong>Example 2:</strong>
+A runner travels 400 m in 50 seconds.
+Find the average speed.
+</p>
+
+<div class="example">
+
+Average speed = Total distance ÷ Total time
+
+<br><br>
+
+= 400 ÷ 50
+
+<br><br>
+
+<strong>= 8 m/s</strong>
+
+</div>
+
+
+<p style="margin-top:20px;">
+<strong>Example 3:</strong>
+A car starts from rest and accelerates at 2 m/s²
+for 5 seconds. Find its final velocity.
+</p>
+
+<div class="example">
+
+u = 0 m/s
+
+<br>
+
+a = 2 m/s²
+
+<br>
+
+t = 5 s
+
+<br><br>
+
+v = u + at
+
+<br><br>
+
+v = 0 + (2 × 5)
+
+<br><br>
+
+<strong>v = 10 m/s</strong>
+
+</div>
+
+
+<p style="margin-top:20px;">
+<strong>Example 4:</strong>
+A car has an initial velocity of 5 m/s and accelerates
+at 3 m/s² for 4 seconds. Find its final velocity.
+</p>
+
+<div class="example">
+
+v = u + at
+
+<br><br>
+
+v = 5 + (3 × 4)
+
+<br><br>
+
+<strong>v = 17 m/s</strong>
+
+</div>
+
+
+<p style="margin-top:20px;">
+<strong>Example 5:</strong>
+An object starts from rest and accelerates at 2 m/s²
+for 4 seconds. Find the displacement.
+</p>
+
+<div class="example">
+
+u = 0
+
+<br>
+
+a = 2 m/s²
+
+<br>
+
+t = 4 s
+
+<br><br>
+
+s = ut + ½at²
+
+<br><br>
+
+s = (0 × 4) + ½(2)(4²)
+
+<br><br>
+
+s = 1 × 16
+
+<br><br>
+
+<strong>s = 16 m</strong>
+
+</div>
+
+
+<p style="margin-top:20px;">
+<strong>Example 6:</strong>
+A vehicle changes its velocity from 10 m/s to
+20 m/s in 5 seconds. Calculate its acceleration.
+</p>
+
+<div class="example">
+
+a = (v - u) ÷ t
+
+<br><br>
+
+a = (20 - 10) ÷ 5
+
+<br><br>
+
+<strong>a = 2 m/s²</strong>
+
+</div>
+
+</div>
+
+
+<div class="box">
+
+<h2>
+✏️ Exercises
+</h2>
+
+<ol class="questions">
+
+<li>
+Define motion.
+</li>
+
+<li>
+Distinguish between distance and displacement.
+</li>
+
+<li>
+Define speed.
+</li>
+
+<li>
+Define velocity.
+</li>
+
+<li>
+What is acceleration?
+</li>
+
+<li>
+State the SI unit of acceleration.
+</li>
+
+<li>
+A cyclist travels 200 m in 20 seconds.
+Calculate the speed.
+</li>
+
+<li>
+A car starts from rest and accelerates at 3 m/s²
+for 4 seconds. Calculate its final velocity.
+</li>
+
+<li>
+A vehicle changes its velocity from 5 m/s to 25 m/s
+in 10 seconds. Calculate its acceleration.
+</li>
+
+<li>
+An object starts from rest and accelerates at 2 m/s²
+for 5 seconds. Calculate its displacement.
+</li>
+
+</ol>
+
+</div>
+
+
+<div class="box">
+
+<h2>
+✅ Answers
+</h2>
+
+<div class="answer">
+
+<strong>1.</strong>
+Motion is the change in position of an object with time
+relative to a reference point.
+
+<br><br>
+
+<strong>2.</strong>
+Distance is the total length of the path travelled,
+while displacement is the shortest distance from the
+initial position to the final position in a specified
+direction.
+
+<br><br>
+
+<strong>3.</strong>
+Speed is distance travelled per unit time.
+
+<br><br>
+
+<strong>4.</strong>
+Velocity is displacement travelled per unit time in
+a specified direction.
+
+<br><br>
+
+<strong>5.</strong>
+Acceleration is the rate of change of velocity with time.
+
+<br><br>
+
+<strong>6.</strong>
+m/s².
+
+<br><br>
+
+<strong>7.</strong>
+
+Speed = Distance ÷ Time
+
+<br>
+
+= 200 ÷ 20
+
+<br>
+
+<strong>= 10 m/s</strong>
+
+<br><br>
+
+<strong>8.</strong>
+
+v = u + at
+
+<br>
+
+v = 0 + (3 × 4)
+
+<br>
+
+<strong>= 12 m/s</strong>
+
+<br><br>
+
+<strong>9.</strong>
+
+a = (v - u) ÷ t
+
+<br>
+
+a = (25 - 5) ÷ 10
+
+<br>
+
+<strong>= 2 m/s²</strong>
+
+<br><br>
+
+<strong>10.</strong>
+
+s = ut + ½at²
+
+<br>
+
+s = (0 × 5) + ½(2)(5²)
+
+<br>
+
+s = 25
+
+<br>
+
+<strong>= 25 m</strong>
+
+</div>
+
+</div>
+
+
+<div class="box">
+
+<h2>
+📝 Quick Test
+</h2>
+
+<ol class="questions">
+
+<li>
+What is the difference between speed and velocity?
+</li>
+
+<li>
+What is the SI unit of speed?
+</li>
+
+<li>
+What does the gradient of a distance-time graph represent?
+</li>
+
+<li>
+What does the gradient of a velocity-time graph represent?
+</li>
+
+<li>
+What does the area under a velocity-time graph represent?
+</li>
+
+<li>
+A car travels 300 m in 15 seconds.
+Calculate its speed.
+</li>
+
+<li>
+A body starts from rest and accelerates at 4 m/s²
+for 3 seconds. Find its final velocity.
+</li>
+
+</ol>
+
+</div>
+
+
+</section>
+
+
+<footer>
+
+<p>
+© 2026 Mwalimu360. Haki zote zimehifadhiwa.
+</p>
+
+</footer>
+
+</body>
+</html>
